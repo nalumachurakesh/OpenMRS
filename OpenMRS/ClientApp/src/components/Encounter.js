@@ -1,6 +1,7 @@
 ﻿import React, { Component } from 'react';
 import {
-     XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+    BarChart, Bar,
+    XAxis, YAxis, CartesianGrid, Tooltip, Legend,
     AreaChart, Area
 } from 'recharts';
 
@@ -16,18 +17,18 @@ export class Encounter extends Component {
         this.getEncounterSummary();
     }
 
-    static renderAreaChart(encounterSummary) {
+    static renderBarChart(encounterSummary) {
         return (
-            <AreaChart width={1100} height={400} data={encounterSummary}
-                margin={{ top: 20, right: 30, left: 0, bottom: 0 }} >
+            <BarChart width={1000} height={500} data={encounterSummary}
+                margin={{ top: 5, right: 0, left: 20, bottom: 5 }} >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="description" />
                 <YAxis />
-                <Tooltip />
-                <Legend />
-                <Area type='monotone' dataKey='male' stackId="1" stroke='#8884d8' fill='#8884d8' />
-                <Area type='monotone' dataKey='female' stackId="1" stroke='#82ca9d' fill='#82ca9d' />
-            </AreaChart>
+                <Tooltip contentStyle={{ textTransform: 'capitalize' }} />
+                <Legend verticalAlign="top" wrapperStyle={{ lineHeight: '40px' }} />
+                <Bar dataKey="male" stackId="a" fill="#8884d8" />
+                <Bar dataKey="female" stackId="a" fill="#82ca9d" />
+            </BarChart>
         );
     }
 
@@ -35,7 +36,7 @@ export class Encounter extends Component {
 
         let areaChartContents = this.state.loading
             ? <p><em>Loading...</em></p>
-            : Encounter.renderAreaChart(this.state.encounterSummary);
+            : Encounter.renderBarChart(this.state.encounterSummary);
 
         return (
             <div>
