@@ -12,8 +12,8 @@ Please install the following
 ## Setup
 
 * Please clone the repository to your local folder.
-* Open OpenMRS -> OpenMRS -> ClientApp and copy the directory path.
-* Open command prompt and type cd --- COPIED DIRECTORY PATH ------.
+* Open OpenMRS -> OpenMRS -> ClientApp and copy the directory path. For example, it looks like "\Documents\Github\OpenMRS\OpenMRS\ClientApp"
+* Open command prompt and type cd --- COPIED DIRECTORY PATH ---.
 * Type "npm install"
 * In the root folder, you will find .sln file. Open that file in Visual Studio 2019.
 * After the .sln file is opened, click "IIS Express" with a play symbol in the tool bar.
