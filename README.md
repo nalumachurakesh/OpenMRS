@@ -17,3 +17,14 @@ Please install the following
 * Type "npm install"
 * In the root folder, you will find .sln file. Open that file in Visual Studio 2019.
 * After the .sln file is opened, click "IIS Express" with a play symbol in the tool bar.
+
+## Application features
+
+* ENCOUNTER
+It contains a graph which represents the patient encounter description summary which is categorized by gender count and encounter description category.
+  
+* DIAGNOSIS 
+It contains a graph which represents the patient diagnosis summary which is categorized by gender count and diagnosis. Graph has data of top 10 highest patient count treated diagnosis.
+
+  
+
