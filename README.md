@@ -20,9 +20,9 @@ Please install the following
 
 ## Application features
 
-* **ENCOUNTER** : It contains a graph which represents the patient encounter description summary which is categorized by gender count and encounter description category.
+* **ENCOUNTER** : Contains a graph which represents the patient encounter description summary which is categorized by gender count and encounter description category.
   
-* **DIAGNOSIS** : It contains a graph which represents the patient diagnosis summary which is categorized by gender count and diagnosis. Graph has data of top 10 highest patient count treated diagnosis.
+* **DIAGNOSIS** : Contains a graph which represents the patient diagnosis summary which is categorized by gender count and diagnosis. Graph has data of top 10 highest patient count treated diagnosis.
 
   
 
